@@ -1,0 +1,117 @@
+/* Updated CSS for more attractive style */
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+  /* Updated gradient colors for a more vibrant look */
+}
+
+.mainContainer {
+  width: 25rem;
+  max-width: 90%;
+  height: auto;
+  border-radius: 1rem;
+  background: #f5f5f5;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  /* Enhanced box shadow for depth */
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.searchInput {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.searchInput input {
+  width: calc(100% - 2.2rem);
+  height: 2.5rem;
+  outline: none;
+  font-size: 1rem;
+  color: #333;
+  padding: 0.5rem;
+  border-radius: 2rem;
+  border: 1px solid #ccc;
+  transition: border-color 0.3s ease;
+}
+
+.searchInput input:focus {
+  border-color: #00bcd4;
+}
+
+.searchInput button {
+  width: 2.2rem;
+  height: 2.5rem;
+  cursor: pointer;
+  color: #fff;
+  border-radius: 50%;
+  margin-left: 0.5rem;
+  transition: all 0.3s ease;
+  background-color: #00bcd4;
+  border: none;
+  outline: none;
+}
+
+.searchInput button:hover {
+  background-color: #0072ff;
+}
+
+.weatherIcon img {
+  width: 8rem;
+  /* Increased size for impact */
+  transition: transform 0.3s ease;
+}
+
+.weatherIcon img:hover {
+  transform: scale(1.1);
+  /* Scale effect on hover */
+}
+
+.cityDetails {
+  color: #333;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.cityDetails .date {
+  color: #555;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.windDetails {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  .mainContainer {
+    padding: 1rem;
+  }
+
+  .weatherIcon img {
+    width: 6rem;
+  }
+
+  .cityDetails {
+    font-size: 2rem;
+  }
+
+  .cityDetails .date {
+    font-size: 1.2rem;
+  }
+}
